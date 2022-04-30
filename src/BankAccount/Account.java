@@ -38,3 +38,9 @@ public class Account {
         return balance;
     }
 }
+
+class BankTeller {
+    public void addNewClients(){
+        
+    }
+}
