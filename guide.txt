@@ -1,0 +1,46 @@
+2. Bank Activity
+a) Create a new client
+b) Modify existing client information
+c) Manage and create client accounts.
+d) Create transactions
+e) Take care of the data consistency.
+
+
+
+3. Transactions
+a) For audit purposes accounts can't be deleted. An active indicator will be used to denote active accounts.
+b) Deactivated accounts need to have 0 balance. Teller will not be able to deactivate an account with positive
+balance.
+c) Account balance can't be negative.
+d) Transaction can't be deleted. In case a transaction needs to be removed an inverse operation will be
+created.
+e) When calculating the account balance you have to consider both input and the output from that account.
+
+
+
+CLIENTS table:
+• ClientId: unique ID that identified the client.
+• FirstName: client's first name.
+• LastName: client's last name.
+• Identification: Identification document used.
+• Address: Client's address.
+
+
+ACCOUNTS table: factory design
+• AccountNumber: unique identifier for an account.
+• ClientId: identifies the client owner for this account.
+• AccountType: specifies the type of the account. Can be one of the following: saving, chequing or
+investment.
+• OpenDate: the date when the account was open.
+• Balance: current balance of the account (calculated based on the existing transactions).
+• IsActive: boolean value indicating if the account is active or not. Note that accounts can't be
+deleted, thus when tellers deletes an account it actually deactivate it.
+
+
+TRANSACTIONS table:
+• TransactionId: unique identifier of the transaction.
+• ToAccountNumber: account from where this transaction initiates.
+• FromAccountNumber: destination account for the current transaction.
+• TransactionDetails: text specifying details associated with the transactions.
+• Value: the amount value considered by the transaction.
+
