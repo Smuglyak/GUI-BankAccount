@@ -1,6 +1,6 @@
 package BankAccount.dbhelper;
 
-import com.model.ProductModel;
+import BankAccount.model.ProductModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

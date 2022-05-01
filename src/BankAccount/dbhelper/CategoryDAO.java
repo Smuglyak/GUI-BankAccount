@@ -1,7 +1,7 @@
 package BankAccount.dbhelper;
 
-import com.model.ProductModel;
-import com.model.CategoryModel;
+import BankAccount.model.ProductModel;
+import BankAccount.model.CategoryModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

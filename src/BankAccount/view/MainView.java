@@ -1,6 +1,6 @@
 package BankAccount.view;
 
-import com.controller.MainController;
+import BankAccount.controller.MainController;
 
 public class MainView {
 

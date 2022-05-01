@@ -1,8 +1,7 @@
-
 package BankAccount.controller;
 
-import com.dbhelper.CategoryDAO;
-import com.model.CategoryModel;
+import BankAccount.dbhelper.CategoryDAO;
+import BankAccount.model.CategoryModel;
 import java.util.List;
 
 public class MainController {
