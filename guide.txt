@@ -16,7 +16,11 @@ d) Transaction can't be deleted. In case a transaction needs to be removed an in
 created.
 e) When calculating the account balance you have to consider both input and the output from that account.
 
+Database tables:
 
+BankTellerAccounts:
+- Login authentication
+- Database
 
 CLIENTS table:
 • ClientId: unique ID that identified the client.
