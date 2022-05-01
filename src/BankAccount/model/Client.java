@@ -1,4 +1,4 @@
-package BankAccount;
+package BankAccount.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package BankAccount;
+package BankAccount.model;
 
 class BankAccountException extends Exception
 {

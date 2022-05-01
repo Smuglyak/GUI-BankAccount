@@ -1,4 +1,6 @@
-package BankAccount;
+package BankAccount.controller;
+
+import BankAccount.model.BankTeller;
 
 public class Main {
     public static void main(String[] args) {
